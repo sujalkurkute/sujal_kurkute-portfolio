@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujal Kurkute — AI & Data Science Student | Data Engineering · AI/ML · GenAI</title>
+<meta name="description" content="Portfolio of Sujal Kurkute, Third-Year AI & Data Science student specializing in Data Engineering, AI/ML, Generative AI, DevOps, and Cloud. Open to internships.">
+<meta property="og:title" content="Sujal Kurkute — AI & Data Science Student">
+<meta property="og:description" content="Data Engineering • AI/ML • Generative AI • DevOps • Cloud — building end-to-end intelligent systems. Open to internships.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌬</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-mark">⌬</div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- Custom Cursor -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- Background canvas (particles) -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAVBAR -->
+<header id="navbar">
+  <nav class="nav-inner">
+    <a href="#home" class="logo">⌬ <span>sujal<span class="accent">.dev</span></span></a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active" data-link>Home</a></li>
+      <li><a href="#about" class="nav-link" data-link>About</a></li>
+      <li><a href="#skills" class="nav-link" data-link>Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-link>Projects</a></li>
+      <li><a href="#certifications" class="nav-link" data-link>Certs</a></li>
+      <li><a href="#achievements" class="nav-link" data-link>Achievements</a></li>
+      <li><a href="#resume" class="nav-link" data-link>Resume</a></li>
+      <li><a href="#contact" class="nav-link" data-link>Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <button id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu">
+  <ul>
+    <li><a href="#home" data-link>Home</a></li>
+    <li><a href="#about" data-link>About</a></li>
+    <li><a href="#skills" data-link>Skills</a></li>
+    <li><a href="#projects" data-link>Projects</a></li>
+    <li><a href="#certifications" data-link>Certs</a></li>
+    <li><a href="#achievements" data-link>Achievements</a></li>
+    <li><a href="#resume" data-link>Resume</a></li>
+    <li><a href="#contact" data-link>Contact</a></li>
+  </ul>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal">⌬ Open to internships — 2026</p>
+    <h1 class="hero-title reveal">
+      <span class="hero-line">Hi, I'm <span class="grad-text">Sujal Kurkute</span></span>
+      <span class="hero-line hero-typed">I build <span id="typed" class="grad-text-2"></span><span class="cursor-blink">|</span></span>
+    </h1>
+    <p class="hero-sub reveal">
+      Third-year <b>AI &amp; Data Science</b> student passionate about leveraging data and technology to solve real-world problems — spanning <b>Data Engineering</b>, <b>AI/ML</b>, <b>Generative AI</b>, <b>DevOps</b>, and <b>Cloud</b>. I love building end-to-end systems, from collecting and processing data to deploying intelligent models in production.
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#resume" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download Resume</a>
+      <a href="#projects" class="btn btn-glass">View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Contact Me</a>
+    </div>
+    <div class="hero-socials reveal">
+      <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sujalkurkute-711272345" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://leetcode.com/u/SujalK3123/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+      <a href="https://hackerrank.com/sujalkurkute7116" target="_blank" rel="noopener" aria-label="HackerRank"><i class="fa-brands fa-hackerrank"></i></a>
+      <a href="mailto:sujalkurkute7116@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <div class="hero-portrait reveal">
+    <div class="portrait-ring"></div>
+    <div class="portrait-frame">
+      <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Sujal&backgroundColor=0f172a" alt="Sujal Kurkute portrait" loading="eager">
+    </div>
+    <div class="portrait-badge"><i class="fa-solid fa-brain"></i> AI/DS</div>
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+    <span></span>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <p class="section-eyebrow reveal">01 - About</p>
+  <h2 class="section-title reveal">The person behind the models</h2>
+
+  <div class="about-grid">
+    <div class="about-photo reveal">
+      <div class="about-photo-glow"></div>
+      <img src="https://api.dicebear.com/7.x/notionists/svg?seed=SujalWork&backgroundColor=1e293b" alt="Sujal working" loading="lazy">
+    </div>
+
+    <div class="about-text reveal">
+      <p>I'm a Final-Year AI &amp; Data Science student who is passionate about leveraging data and technology to solve real-world problems. My interests span Data Engineering, Data Analytics, Artificial Intelligence, Machine Learning, Generative AI, DevOps, Cloud Computing, and MLOps.</p>
+      <p>I enjoy building end-to-end solutions from collecting and processing data to developing intelligent models and deploying them in scalable production environments. My goal is to build scalable, data-driven, and intelligent systems that create meaningful impact. Currently seeking internships, collaborative projects, and learning opportunities across Data Engineering, AI/ML, Data Analytics, DevOps, Cloud, and MLOps.</p>
+
+      <div class="about-edu">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div>
+          <strong>B.Tech, Artificial Intelligence & Data Science</strong>
+          <span>CSMSS Chh. Shahu College of Engineering · 2023 – 2027</span>
+        </div>
+      </div>
+
+      <div class="about-facts">
+        <div class="fact"><i class="fa-solid fa-cloud"></i> Currently learning AWS Cloud Computing</div>
+        <div class="fact"><i class="fa-solid fa-laptop-code"></i> Always learning, building, and growing as a versatile tech professional</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="counters reveal">
+    <div class="counter-card">
+      <span class="counter" data-target="5">0</span><span class="counter-suffix">+</span>
+      <p>Certifications</p>
+    </div>
+    <div class="counter-card">
+      <span class="counter" data-target="6">0</span><span class="counter-suffix">+</span>
+      <p>Core Tech Domains</p>
+    </div>
+    <div class="counter-card">
+      <span class="counter" data-target="3">0</span><span class="counter-suffix">+</span>
+      <p>Years in B.Tech Program</p>
+    </div>
+    <div class="counter-card">
+      <span class="counter" data-target="1">0</span><span class="counter-suffix">+</span>
+      <p>Open Source Program</p>
+    </div>
+  </div>
+
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <p class="section-eyebrow reveal">02 - Skills</p>
+  <h2 class="section-title reveal">Tools I reach for</h2>
+  <p class="section-sub reveal">A stack spanning research-grade ML to production-grade web engineering.</p>
+
+  <div class="skills-tabs reveal" id="skills-tabs">
+    <button class="tab-btn active" data-tab="languages">Languages</button>
+    <button class="tab-btn" data-tab="data">Data Engineering</button>
+    <button class="tab-btn" data-tab="ai">AI / ML / GenAI</button>
+    <button class="tab-btn" data-tab="devops">DevOps</button>
+    <button class="tab-btn" data-tab="cloud">Cloud & Leadership</button>
+  </div>
+
+  <div class="skills-grid" id="skills-grid"></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <p class="section-eyebrow reveal">03 - Projects</p>
+  <h2 class="section-title reveal">Things I've built</h2>
+  <p class="section-sub reveal">Selected work where AI meets real-world impact.</p>
+
+  <div class="projects-grid" id="projects-grid"></div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section">
+  <p class="section-eyebrow reveal">04 - Certifications</p>
+  <h2 class="section-title reveal">Credentials</h2>
+
+  <div class="cert-filters reveal" id="cert-filters">
+    <button class="tab-btn active" data-filter="all">All</button>
+    <button class="tab-btn" data-filter="AI/ML">AI/ML</button>
+    <button class="tab-btn" data-filter="Dev">Dev</button>
+  </div>
+
+  <div class="certs-grid" id="certs-grid"></div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section">
+  <p class="section-eyebrow reveal">05 - Achievements</p>
+  <h2 class="section-title reveal">Milestones along the way</h2>
+
+  <div class="achievements-timeline" id="achievements-timeline"></div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="section">
+  <p class="section-eyebrow reveal">06 - Resume</p>
+  <h2 class="section-title reveal">My resume, at a glance</h2>
+
+  <div class="resume-card reveal">
+    <div class="resume-card-left">
+      <i class="fa-solid fa-file-lines resume-icon"></i>
+      <h3>Sujal_Kurkute_Resume.pdf</h3>
+      <p>Updated June 2026 · AI & Data Science Student · Open to Internships</p>
+      <div class="resume-actions">
+        <a href="#" class="btn btn-primary" id="preview-resume-btn"><i class="fa-solid fa-eye"></i> Preview</a>
+        <a href="assets/resume.pdf" download class="btn btn-glass"><i class="fa-solid fa-download"></i> Download</a>
+      </div>
+    </div>
+    <div class="resume-card-right">
+  <i class="fa-solid fa-file-pdf" style="position:absolute;top:14px;right:18px;font-size:1.4rem;color:var(--accent);opacity:.5;"></i>
+  <div class="resume-mini-line" style="width:90%"></div>
+      <div class="resume-mini-line" style="width:60%"></div>
+      <div class="resume-mini-line" style="width:75%"></div>
+      <div class="resume-mini-line" style="width:40%"></div>
+      <div class="resume-mini-line" style="width:80%"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <p class="section-eyebrow reveal">07 — Contact</p>
+  <h2 class="section-title reveal">Let's build something</h2>
+  <p class="section-sub reveal">Open to internships, full-time AI/ML roles, and interesting collaborations.</p>
+
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <a href="mailto:sujalkurkute7116@gmail.com" class="contact-row">
+        <i class="fa-solid fa-envelope"></i>
+        <div><span>Email</span><strong>sujalkurkute7116@gmail.com</strong></div>
+      </a>
+      <a href="tel:+918087324485" class="contact-row">
+        <i class="fa-solid fa-phone"></i>
+        <div><span>Phone</span><strong>+91 80873 24485</strong></div>
+      </a>
+      <div class="contact-row">
+        <i class="fa-solid fa-location-dot"></i>
+        <div><span>Location</span><strong>Maharashtra, India</strong></div>
+      </div>
+      <a href="https://www.linkedin.com/in/sujalkurkute-711272345" target="_blank" rel="noopener" class="contact-row">
+        <i class="fa-brands fa-linkedin"></i>
+        <div><span>LinkedIn</span><strong>/in/sujalkurkute-711272345</strong></div>
+      </a>
+      <a href="https://github.com/sujalkurkute" target="_blank" rel="noopener" class="contact-row">
+        <i class="fa-brands fa-github"></i>
+        <div><span>GitHub</span><strong>/sujalkurkute</strong></div>
+      </a>
+    </div>
+
+    <form class="contact-form reveal" id="contact-form">
+      <div class="form-row">
+        <div class="form-field">
+          <input type="text" id="name" required placeholder=" ">
+          <label for="name">Your Name</label>
+        </div>
+        <div class="form-field">
+          <input type="email" id="email" required placeholder=" ">
+          <label for="email">Your Email</label>
+        </div>
+      </div>
+      <div class="form-field">
+        <input type="text" id="subject" required placeholder=" ">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="form-field">
+        <textarea id="message" rows="5" required placeholder=" "></textarea>
+        <label for="message">Message</label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-submit">
+        <span class="btn-submit-text">Send Message</span>
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+      <div class="form-success" id="form-success">
+        <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you soon.
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="#home" class="logo">⌬ <span>sujal<span class="accent">.dev</span></span></a>
+    <div class="footer-socials">
+      <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sujalkurkute-711272345" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://leetcode.com/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+      <a href="mailto:sujalkurkute7116@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <p>© 2026 Sujal Kurkute. Built with care, caffeine, and zero templates.</p>
+  </div>
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
