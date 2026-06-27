@@ -1,4 +1,4 @@
-# Aarav Sharma — Portfolio (100% Free Stack)
+# Sujal Kurkute — Portfolio (100% Free Stack)
 
 A premium, animated, glassmorphic portfolio built with **plain HTML, CSS, and JavaScript** — no build tools, no paid services, no npm install required. Open `index.html` and it works.
 
