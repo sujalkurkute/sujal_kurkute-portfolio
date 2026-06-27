@@ -17,11 +17,11 @@ window.addEventListener('mousemove', e => {
 });
 const isTouchDevice = window.matchMedia('(hover: none)').matches;
 if (!isTouchDevice) {
-  (function animateRing(){
-    rx += (mx - rx) * 0.15; ry += (my - ry) * 0.15;
-    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-    requestAnimationFrame(animateRing);
-  })();
+ (function animateRing(){
+  rx += (mx - rx) * 0.15; ry += (my - ry) * 0.15;
+  ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+  requestAnimationFrame(animateRing);
+})();
 }
 document.querySelectorAll('a,button,.skill-card,.project-card,.cert-card').forEach(el => {
   el.addEventListener('mouseenter', () => ring.classList.add('hover'));
@@ -393,10 +393,10 @@ let particles = [];
 
 function resizeCanvas(){
   canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.height = document.body.scrollHeight;
 }
 function initParticles(){
-  const count = Math.min(40, Math.floor(window.innerWidth / 30));
+  const count = Math.min(80, Math.floor(window.innerWidth / 18));
   particles = Array.from({ length: count }, () => ({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
