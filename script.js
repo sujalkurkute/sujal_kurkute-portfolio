@@ -340,7 +340,7 @@ achievementsData.forEach((a, i) => {
 ============================================================ */
 document.getElementById('preview-resume-btn').addEventListener('click', (e) => {
   e.preventDefault();
-  window.open('assets/resume.pdf', '_blank');
+  window.open('assets/Sujal Kurkute - Resume.pdf', '_blank');
 });
 
 /* ============================================================
