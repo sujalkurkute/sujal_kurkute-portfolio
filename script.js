@@ -214,6 +214,14 @@ document.querySelectorAll('#skills-tabs .tab-btn').forEach(btn => {
    tech/features/links with your real project details. */
 const projectsData = [
   {
+    title:'AI Software Engineering Agent',
+    desc:'An autonomous AI agent that finds real bugs in a codebase, proposes and verifies fixes in an isolated sandbox, and opens GitHub Pull Requests — combining static analysis, LLM reasoning, and automated testing into a single self-verifying pipeline.',
+    img:'https://images.unsplash.com/photo-1774901128283-64c62117216a?w=600&q=60&auto=format',
+    tech:['Python', "Groq API (LLM)","ChromaDB", "Tree-sitter","Ruff","Mypy","Docker","GitPython","PyGithub","Git / GitHub API"],
+    features:[ 'Repository Cloning & Code Chunking','Semantic Code Search','Automated Static Analysis','LLM-Based Bug Reasoning','AI-Generated Fix Proposals','Sandboxed Fix Verification','Automated Pull Request Creation',],
+    github:'https://github.com/sujalkurkute/AI-SWE-Agent.git'
+  },
+  {
     title:'E-Commerce Data Warehouse',
     desc:'An end-to-end Data Engineering project built using the Olist Brazilian E-Commerce dataset. The objective of this project is to transform raw e-commerce data into a structured data warehouse for analytical reporting and business intelligence.',
     img:'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=60&auto=format',
