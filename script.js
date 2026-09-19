@@ -346,10 +346,21 @@ achievementsData.forEach((a, i) => {
 /* ============================================================
    RESUME PREVIEW
 ============================================================ */
-document.getElementById('preview-resume-btn').addEventListener('click', (e) => {
-  e.preventDefault();
-  window.open('assets/Sujal Kurkute - Resume.pdf', '_blank');
-});
+// The Preview button is a plain link to resume/res.html (opens in a new tab),
+// so editing res.html updates the portfolio automatically. Here we only show
+// the file's real "last updated" date next to it.
+(async () => {
+  const label = document.getElementById('resume-updated');
+  if (!label) return;
+  try {
+    const res = await fetch('resume/res.html', { method: 'HEAD', cache: 'no-cache' });
+    const modified = res.headers.get('Last-Modified');
+    if (res.ok && modified) {
+      const d = new Date(modified).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+      label.textContent = ` · Updated ${d}`;
+    }
+  } catch (_) { /* ignore: label stays empty */ }
+})();
 
 /* ============================================================
    CONTACT FORM (Formspree-ready, free tier)
@@ -357,7 +368,7 @@ document.getElementById('preview-resume-btn').addEventListener('click', (e) => {
    to receive real emails: https://formspree.io
 ============================================================ */
 const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', async (e) => {
+if (contactForm) contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const btn = contactForm.querySelector('.btn-submit');
   const text = btn.querySelector('.btn-submit-text');
